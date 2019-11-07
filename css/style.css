@@ -1,0 +1,138 @@
+<style>@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=vietnamese');
+</style>* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav {
+    font-size: 30px;
+    color: #333;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.link-left {
+    padding: 0 !important;
+    flex-shrink: 0;
+    width: 200px;
+}
+
+.link {
+    background: #F5F5F5;
+    margin: 5px 0px;
+    text-decoration: underline;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.link a {
+    font-weight: 600;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    color: #333;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-bottom: 5px;
+    padding: 0 1px 0 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sub-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.svg-inline--fa.fa-w-16 {
+    width: 3px;
+}
+
+.container .noidung {
+    margin-top: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.noidung .item {
+    width: 200px;
+    margin: 0px 8px;
+}
+
+.noidung .item a {
+    text-decoration: none;
+    color: #606060;
+    text-transform: capitalize;
+}
+
+.noidung .item a img {
+    width: 100%;
+    flex-shrink: 0;
+    float: left;
+}
+
+.container .right {
+    margin-top: -15px;
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.container .right .about {
+    margin-top: 5px;
+    color: #333;
+    font-size: 20px;
+    background-color: #eee;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 8px;
+    padding: 8px;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #eee;
+}
+
+@media only screen and (max-width:620px) {
+    .container {
+        display: block;
+    }
+    .link-left {
+        width: 100% !important;
+    }
+    .right {
+        width: 100% !important;
+        text-align: center;
+    }
+    .noidung {
+        width: 100%;
+        flex-direction: column;
+    }
+    .noidung .item {
+        width: 100%;
+        margin: 0!important;
+    }
+}
